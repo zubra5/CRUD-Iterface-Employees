@@ -1,0 +1,13 @@
+﻿@using WebAppTestWG.Models
+@model Employee
+
+@{
+    var Name = String.Empty;
+
+    if (Model != null)
+    {
+        Name = String.Format("{0} {1} {2}", Model.FirstName, Model.MiddleName, Model.LastName);
+    }
+}
+
+<span>@Name</span>
